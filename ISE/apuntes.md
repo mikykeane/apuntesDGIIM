@@ -430,7 +430,7 @@ Al reiniciar nos pedirá la clave de cifrado de dicho disco ("practicas,ISE").
 Debemos crear una red NAT en la configuración general de
 VirtualBox. Una vez creada editaremos sus propiedades y añadiremos una
 red en las redes sólo-anfitrión (llamada vbox0), accedemos a
-propiedades y modificamos la IPv4, 192.168.58.1 al servidor DHCP  le
+propiedades y modificamos la IPv4, 192.168.56.1 al servidor DHCP  le
 ponemos dirección la misma (acabada en .100), la máscara 255.255.255.0
 y para el rango en el límite inferior y superior le damos valores
 entre .101 y .254
@@ -509,7 +509,7 @@ interfaz que hemos añadido, quede así:
 ```
 auto enp0s8
 iface enp0s8 inet static
-address 192.168.58.105
+address 192.168.56.105
 netmask 255.255.255.0
 #gateway 192.168.58.1 // Si da problemas esta línea se puede
 comentar/eliminar
